@@ -21,6 +21,30 @@ To submit the quiz, have the project hosted on Github and submit the link on Cer
 ![alt-text](https://s3.amazonaws.com/codecore-website-data/certifiedin_images/CodeCore-Bootcamp-Quiz-1.png)
 
 ----
+### Create a new rails app: 
 ` $ rails new quiz2_redo -d postgresql -T `
-` $ `
+` $ bundle `
+
+### Create the model:
+` $ rails db:create`
+` $ rails g model support_request name email department message:text status:boolean`
+` $ rails db:migrate`
+
+### Create the controller:
+we generate the `SupportRequestsController` where we will put all the actions for the CRUD
+` $ rails g controller support_requests`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
