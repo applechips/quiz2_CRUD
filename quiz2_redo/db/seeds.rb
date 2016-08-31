@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+choices = ["marketing", "sales", "technical"]
+1000.times do
+  support_request = SupportRequest.new( name: Faker::Name.name,
+                                email: Faker::Internet.email,
+                                department: choices.sample,
+                                message: Faker::Hacker.say_something_smart)
+  support_request.save
+end

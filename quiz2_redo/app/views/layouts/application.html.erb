@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quiz2Redo</title>
+    <title>Quiz 2 Redo</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -18,12 +18,14 @@
   </head>
 
   <body>
-    <div class:"container">
-      <%= link_to "All Support Requests", root_path %>
-      |
-      <%= link_to "New Support Requests", new_support_request_path  %>
-      <hr>
-    </div>
+    <nav class="navbar navbar-inverse" style = 'width: 100%; background-color: #111111;'>
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "All Support Requests", root_path %></li>
+          <li><%= link_to "New Support Requests", new_support_request_path  %></li>
+        </ul>
+      </div>
+  </nav>
 
   </head>
 
@@ -38,7 +40,6 @@
 
   <body>
 
-=======
   </head>
 
   <body>
